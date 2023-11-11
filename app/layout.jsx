@@ -3,11 +3,12 @@ import { Sora } from "next/font/google"
 import Header from '@/components/Header'
 import Nav from '@/components/Nav'
 import TopLeftImg from '@/components/TopLeftImg'
+import Particles from '@/components/Particles'
 
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
-  weight: ["100","200","300","400","500","600","700","800",]
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800",]
 })
 
 export const metadata = {
@@ -18,7 +19,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt">
-      <body className={`w-full h-screen overflow-hidden select-none bg-primary bg-cover bg-no-repeat text-white font-sora`}>
+      <body className={`w-full h-screen overflow-hidden select-none bg-imgprimary bg-cover bg-no-repeat text-white font-sora`}>
+        <Particles />
         <TopLeftImg />
         <Header />
         <Nav />

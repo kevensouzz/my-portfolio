@@ -12,7 +12,7 @@ module.exports = {
         accent: '#F13024',
       },
       backgroundImage: {
-        primary: "url('/background-primary.svg')"
+        imgprimary: "url('/background-primary.svg')"
       },
       fontFamily: {
         sora: [`var(--font-sora)`, 'sans-serif']

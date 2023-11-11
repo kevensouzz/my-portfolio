@@ -1,5 +1,6 @@
 export default function Home() {
   return (
-    <main></main>
+    <main className={`h-screen w-full overflow-hidden`}>
+    </main>
   )
 }
