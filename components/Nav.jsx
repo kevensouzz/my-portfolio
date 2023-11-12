@@ -10,10 +10,10 @@ import {
 
 // nav data
 export const navData = [
-  { name: "Home", path: '/', icon: <HiHome /> },
-  { name: "About", path: '/about', icon: <HiUser /> },
-  { name: "Projects", path: '/projects', icon: <HiRectangleGroup /> },
-  { name: "Contact", path: '/contact', icon: <HiChatBubbleBottomCenterText /> }
+  { name: "Início", path: '/', icon: <HiHome /> },
+  { name: "Sobre", path: '/sobre', icon: <HiUser /> },
+  { name: "Projetos", path: '/projetos', icon: <HiRectangleGroup /> },
+  { name: "Contato", path: '/contato', icon: <HiChatBubbleBottomCenterText /> }
 ];
 
 export default function Nav() {

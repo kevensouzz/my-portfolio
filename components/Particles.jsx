@@ -40,7 +40,7 @@ export default function ParticlesContainer() {
         },
         modes: {
           push: {
-            quantiy: 90
+            quantiy: 100
           },
           repulse: {
             distance: 100,
@@ -56,8 +56,8 @@ export default function ParticlesContainer() {
           color: "#f5d393",
           distance: 100,
           enable: true,
-          opacity: 0.5,
-          width: 1
+          opacity: 0.25,
+          width: 0.5
         },
         collisions: {
           enable: true
@@ -75,7 +75,7 @@ export default function ParticlesContainer() {
         number: {
           density: {
             enable: true,
-            area: 500
+            area: 750
           },
           value: 100
         },

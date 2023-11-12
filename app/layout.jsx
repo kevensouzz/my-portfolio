@@ -2,8 +2,9 @@ import './globals.css'
 import { Sora } from "next/font/google"
 import Header from '@/components/Header'
 import Nav from '@/components/Nav'
-import TopLeftImg from '@/components/TopLeftImg'
 import Particles from '@/components/Particles'
+import TopLeftImg from '@/components/TopLeftImg'
+import BackRightImg from "@/components/BackRightImg";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body className={`w-full h-screen overflow-hidden select-none bg-imgprimary bg-cover bg-no-repeat text-white font-sora`}>
         <Particles />
         <TopLeftImg />
+        <BackRightImg />
         <Header />
         <Nav />
         {children}
