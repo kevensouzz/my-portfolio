@@ -11,11 +11,11 @@ export default function Contact() {
 
           <form className={`flex-1 flex flex-col gap-6 w-full mx-auto z-10`}>
             <div className="flex gap-x-6 w-full">
-              <input type="text" placeholder="nome" className="input" />
-              <input type="text" placeholder="email" className="input" />
+              <input type="text" placeholder="nome" aria-label="nome" required className="input" maxLength={40} />
+              <input type="text" placeholder="email" aria-label="email" required className="input" maxLength={56} />
             </div>
-            <input type="text" placeholder="assunto" className="input" />
-            <textarea placeholder="mensagem" className="textarea"></textarea>
+            <input type="text" placeholder="assunto" aria-label="assunto" required className="input" maxLength={48} />
+            <textarea placeholder="mensagem" aria-label="mensagem" required className="textarea"></textarea>
 
             <button className="max-md:cursor-default btn rounded-full border max-md:border-accent border-white/50 max-w-[175px] max-md:max-w-[50px] transition-all duration-300 flex item-center justify-center overflow-hidden md:hover:border-accent group">
               <span className="hidden md:flex translate-y-[50%] md:group-hover:-translate-y-[100%] md:group-hover:opacity-0 transition-all duration-500 ">Enviar Mensagem!</span>

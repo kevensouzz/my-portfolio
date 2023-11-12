@@ -2,24 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  -webkit-user-drag: none;
-}
-
-@media screen and (max-width: 768px) {
-  * {
-    cursor: default;
-  }
-}
-
 @layer base {
+
   .btn,
   .input {
     @apply h-[52px];
   }
 
   .input {
-    @apply w-full h-[52px] rounded-lg pl-6 capitalize;
+    @apply w-full h-[52px] rounded-lg px-6 capitalize;
   }
 
   .input,
@@ -28,6 +19,16 @@
   }
 
   .textarea {
-    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
+    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none scrollbar-none;
+  }
+}
+
+* {
+  -webkit-user-drag: none;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    cursor: default;
   }
 }
