@@ -26,7 +26,7 @@ export default function Nav() {
         {navData.map((link, index) => {
           return <Link className={`
           ${link.path == pathname && "text-accent"}
-          md:hover:text-accent max-md:cursor-default
+          md:hover:text-accent
           transition-all duration-300 ease-linear
           relative flex items-center group
           `}

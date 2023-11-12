@@ -6,7 +6,7 @@
   -webkit-user-drag: none;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   * {
     cursor: default;
   }
@@ -24,7 +24,7 @@
 
   .input,
   .textarea {
-    @apply bg-transparent outline-none focus:ring-1 focus:ring-accent border border-white/20 placeholder:text-white/30 placeholder:font-light;
+    @apply bg-transparent outline-none focus:ring-1 focus:ring-accent focus:border-none border border-white/25 placeholder:text-white/50 placeholder:font-light;
   }
 
   .textarea {

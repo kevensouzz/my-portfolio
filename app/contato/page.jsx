@@ -17,10 +17,10 @@ export default function Contact() {
             <input type="text" placeholder="assunto" className="input" />
             <textarea placeholder="mensagem" className="textarea"></textarea>
 
-            <button className="btn rounded-full border border-white/50 max-w-[175px] transition-all ease-linear duration-500 flex item-center justify-center overflow-hidden hover:border-accent group">
-              <span className="translate-y-[50%] group-hover:-translate-y-[100%] group-hover:opacity-0 transition-all ease-linear duration-500 ">Enviar Mensagem!</span>
+            <button className="max-md:cursor-default btn rounded-full border max-md:border-accent border-white/50 max-w-[175px] max-md:max-w-[50px] transition-all duration-300 flex item-center justify-center overflow-hidden md:hover:border-accent group">
+              <span className="hidden md:flex translate-y-[50%] md:group-hover:-translate-y-[100%] md:group-hover:opacity-0 transition-all duration-500 ">Enviar Mensagem!</span>
 
-              <BsArrowRight className="-translate-y-[100%] opacity-0 group-hover:flex group-hover:translate-y-[50%] group-hover:opacity-100 transition-all ease-linear duration-500 absolute text-[22px] text-accent" />
+              <BsArrowRight className="md:-translate-y-[100%] max-md:translate-y-[50%] md:opacity-0 md:group-hover:flex md:group-hover:translate-y-[50%] md:group-hover:opacity-100 transition-all duration-500 absolute text-[22px] text-accent" />
             </button>
           </form>
         </div>
