@@ -10,16 +10,16 @@
   }
 
   .input {
-    @apply w-full h-[52px] rounded-lg px-6 capitalize;
+    @apply w-full h-[52px] rounded-lg px-6;
   }
 
   .input,
   .textarea {
-    @apply bg-transparent outline-none focus:ring-1 focus:ring-accent focus:border-none border border-white/25 placeholder:text-white/50 placeholder:font-light;
+    @apply bg-transparent outline-none focus:ring-1 focus:ring-accent focus:border-white/0 border border-white/25 placeholder:text-white/50 placeholder:font-light;
   }
 
   .textarea {
-    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none scrollbar-none;
+    @apply w-full h-[180px] p-6 rounded-lg resize-none scrollbar-none;
   }
 }
 
