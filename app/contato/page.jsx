@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { BsArrowRight } from "react-icons/bs"
 import { send } from "@emailjs/browser"
+import Modal from "@/components/Modal";
 
 export default function Contact() {
 
@@ -9,6 +10,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [modal, setModal] = useState(false);
 
   function sendEmail(e) {
     e.preventDefault();
@@ -26,6 +28,7 @@ export default function Contact() {
         setEmail("");
         setSubject("");
         setMessage("");
+        setModal(true);
       });
   }
 
@@ -52,6 +55,7 @@ export default function Contact() {
             </button>
           </form>
         </div>
+        {modal && <Modal message={"Enviado com Sucesso!"} onClose={() => setModal(false)} />}
       </div>
     </main>
   )
