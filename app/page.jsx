@@ -1,4 +1,7 @@
-import HomeText from "@/components/HomeText"
+const HomeText = dynamic(() => import("@/components/HomeText"), {
+  ssr: false,
+})
+import dynamic from "next/dynamic"
 import Link from "next/link"
 import { GoDownload } from "react-icons/go"
 import { HiRectangleGroup } from "react-icons/hi2"
