@@ -26,14 +26,14 @@ export default function Nav() {
         {navData.map((link, index) => {
           return <Link className={`
           ${link.path == pathname && "text-accent"}
-          md:hover:text-accent
+          outline-none md:hover:text-accent md:focus-visible:text-accent
           transition-all duration-300 ease-linear
           relative flex items-center group
           `}
             key={index}
             href={link.path}
           >
-            <div className={`absolute pr-14 right-0 hidden xl:group-hover:flex`}>
+            <div className={`absolute pr-14 right-0 hidden xl:group-focus-visible:flex xl:group-hover:flex`}>
               <div className={`bg-white relative flex text-accent items-center p-2 rounded-[4px]`}>
                 <div className={`text-xs leading-none font-semibold capitalize`}>{link.name}</div>
                 <div className={`border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2`}></div>
