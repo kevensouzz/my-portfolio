@@ -1,4 +1,13 @@
-import AboutData from "@/components/AboutData";
+import SpinningLoading from "@/components/SpinningLoading"
+import dynamic from "next/dynamic"
+
+const AboutData = dynamic(() => import("@/components/AboutData"), {
+  ssr: false,
+  loading: () =>
+    <div className="w-full xl:max-w-[50%] flex items-center justify-center">
+      <SpinningLoading />
+    </div>
+})
 
 export default function About() {
   return (

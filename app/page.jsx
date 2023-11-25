@@ -1,7 +1,9 @@
-const HomeText = dynamic(() => import("@/components/HomeText"), {
-  ssr: false,
-})
+import SpinningLoading from "@/components/SpinningLoading"
 import dynamic from "next/dynamic"
+const HomeText = dynamic(() => import("@/components/HomeText"), {
+  loading: () => <SpinningLoading />,
+  ssr: false
+})
 import Link from "next/link"
 import { GoDownload } from "react-icons/go"
 import { HiRectangleGroup } from "react-icons/hi2"

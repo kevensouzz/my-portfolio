@@ -1,4 +1,13 @@
-import ProjectsSlider from "@/components/ProjectsSlider";
+import SpinningLoading from "@/components/SpinningLoading";
+import dynamic from "next/dynamic";
+
+const ProjectsSlider = dynamic(() => import("@/components/ProjectsSlider"), {
+  ssr: false,
+  loading: () =>
+    <div className="w-2/3 max-sm:w-full flex justify-center items-center">
+      <SpinningLoading />
+    </div>
+})
 
 export default function Projects() {
   return (
@@ -10,7 +19,7 @@ export default function Projects() {
               Meus Projetos<span className="text-accent">.</span>
             </h2>
             <p className="font-extralight text-lg max-sm:text-sm 2xl:text-2xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo non, quam omnis, delectus sunt minima neque possimus ipsam hic voluptates voluptas autem veritatis doloremque mollitia quisquam labore optio? Incidunt, vero!
+              Bem-vindo à seção de projetos, onde compartilho alguns desafios realizados e ideias que sairam do papél, além de mostrar um pouco da minha experiência como desenvolvedor. Sinta-se convidado para explorar os repositórios e os Deployments.
             </p>
           </div>
           <ProjectsSlider />
