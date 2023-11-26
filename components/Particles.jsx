@@ -12,7 +12,7 @@ export default function ParticlesContainer() {
   const particlesLoaded = useCallback(async () => { }, []);
 
   return <Particles
-    className={`w-full h-full absolute`}
+    className={`w-full h-full absolute max-sm:hidden`}
     id="tsparticles"
     init={particlesInit}
     loaded={particlesLoaded}
