@@ -1,9 +1,11 @@
 "use client";
 import Typewriter from 'typewriter-effect';
+import { motion } from "framer-motion"
+import { fadeIn } from '@/variants';
 
 export default function HomeText() {
   return (
-    <span>
+    <motion.span variants={fadeIn("down", 0.3)} initial="hidden" animate="show" exit="hidden">
       <h2 className={`text-3xl md:text-6xl max-[340px]:text-2xl`}>
         Olá Mundo, Sou <span className={`text-accent`}>Keven</span>!
       </h2>
@@ -23,6 +25,6 @@ export default function HomeText() {
           }}
         />
       </h3>
-    </span>
+    </motion.span>
   )
 }

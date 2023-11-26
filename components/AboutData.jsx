@@ -1,5 +1,8 @@
 "use client";
+import { TbBrandMysql } from "react-icons/tb"
 import { useState } from "react";
+import { fadeIn } from "@/variants";
+import { motion } from "framer-motion";
 
 import {
   FaHtml5,
@@ -106,14 +109,12 @@ const Data = [
   }
 ];
 
-import { TbBrandMysql } from "react-icons/tb"
-
 export default function AboutData() {
 
   const [index, setIndex] = useState(0);
 
   return (
-    <div className={`flex flex-col max-md:pt-8 pt-10 xl:pt-32 w-full xl:max-w-[50%] h-[480px] max-sm:h-[300px]`}>
+    <motion.div variants={fadeIn("left", 0.3)} initial="hidden" animate="show" exit="hidden" className={`flex flex-col max-md:pt-8 pt-10 xl:pt-32 w-full xl:max-w-[50%] h-[480px] max-sm:h-[300px]`}>
       <div className={`flex max-[300px]:gap-x-1 max-[425px]:gap-x-2 gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4`}>
         {Data.map((item, itemIndex) => {
           return (
@@ -154,6 +155,6 @@ export default function AboutData() {
           )
         })}
       </div>
-    </div>
+    </motion.div>
   )
 }

@@ -75,7 +75,7 @@ export default function ParticlesContainer() {
         number: {
           density: {
             enable: true,
-            area: 750
+            area: 1000
           },
           value: 100
         },
