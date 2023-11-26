@@ -28,10 +28,6 @@ export default function ParticlesContainer() {
       fpsLimit: 120,
       interactivity: {
         events: {
-          onClick: {
-            enable: false,
-            mode: "push"
-          },
           onHover: {
             enable: true,
             mode: "repulse"
@@ -39,9 +35,6 @@ export default function ParticlesContainer() {
           resize: true,
         },
         modes: {
-          push: {
-            quantiy: 100
-          },
           repulse: {
             distance: 100,
             duration: 1

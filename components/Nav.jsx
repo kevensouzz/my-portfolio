@@ -8,7 +8,6 @@ import {
   HiChatBubbleBottomCenterText,
 } from 'react-icons/hi2';
 
-// nav data
 export const navData = [
   { name: "Início", path: '/', icon: <HiHome /> },
   { name: "Sobre", path: '/sobre', icon: <HiUser /> },

@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { RiGithubFill, RiLinkedinBoxFill } from "react-icons/ri"
 
-
 export default function Social() {
   return (
     <div className="flex items-center gap-x-3 text-xl">

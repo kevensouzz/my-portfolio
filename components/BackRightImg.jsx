@@ -10,7 +10,7 @@ export default function BackRightImg() {
         height={200}
         alt=""
         draggable="false"
-     />
+      />
     </div>
   )
 }
