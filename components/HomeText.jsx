@@ -21,7 +21,6 @@ export default function HomeText() {
             loop: true,
             delay: 125,
             deleteSpeed: 125,
-            cursor: "",
           }}
         />
       </h3>
