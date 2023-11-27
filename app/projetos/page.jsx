@@ -1,5 +1,6 @@
 import ProjectsText from "@/components/ProjectsText"
 import ProjectsSlider from "@/components/ProjectsSlider"
+import ProjectsCarroussel from "@/components/ProjectsCarroussel"
 
 export default function Projects() {
   return (
@@ -7,7 +8,8 @@ export default function Projects() {
       <div className={`container mx-auto`}>
         <div className="flex flex-col lg:flex-row justify-around gap-5 lg:gap-0 items-center">
           <ProjectsText />
-          <ProjectsSlider />
+          {/* <ProjectsSlider /> */}
+          <ProjectsCarroussel />
         </div>
       </div>
     </main>
