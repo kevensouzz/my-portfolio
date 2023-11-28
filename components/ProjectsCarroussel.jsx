@@ -89,7 +89,7 @@ export default function ProjectsCarroussel() {
         {
           repos.map((item, itemIndex) => {
             return (
-              <span onClick={() => setIndex(itemIndex)} key={itemIndex} className={` cursor-pointer rounded-full ${index == itemIndex ? "bg-accent w-[10px] h-[10px]" : "bg-accent/50 w-2 h-2"}`} />
+              <span onClick={() => setIndex(itemIndex)} key={itemIndex} className={`md:cursor-pointer rounded-full ${index == itemIndex ? "bg-accent w-[10px] h-[10px] animate-pulse" : "bg-accent/25 w-2 h-2"}`} />
             )
           })
         }
