@@ -1,5 +1,4 @@
 "use client";
-import { TbBrandMysql } from "react-icons/tb"
 import { useState } from "react";
 import { fadeIn } from "@/variants";
 import { motion } from "framer-motion";
@@ -10,7 +9,6 @@ import {
   FaJs,
   FaReact,
   FaGithub,
-  FaDocker,
   FaLinux,
 
 } from "react-icons/fa";
@@ -21,7 +19,7 @@ import {
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
-  SiPhp,
+  SiTailwindcss
 } from "react-icons/si";
 
 const Data = [
@@ -49,6 +47,7 @@ const Data = [
         icons: [
           <FaReact />,
           <SiNextdotjs />,
+          <SiTailwindcss />,
           <SiNodedotjs />,
           <SiExpress />,
         ],
