@@ -39,7 +39,7 @@ export default function Contact() {
       <div className={`container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full`}>
         <div className={`flex flex-col w-full max-w-[700px] max-lg:max-w-[500px] gap-3`}>
           <motion.h2 variants={fadeIn("down", 0.3)} initial="hidden" animate="show" exit="hidden" className={`font-semibold text-3xl text-center max-[375px]:text-xl`}>
-            Vamos <span className="text-accent">Nos Conectar!</span>
+            Vamos <span className="text-accent">Nos Conectar</span>!
           </motion.h2>
 
           <form method="POST" onSubmit={sendEmail} className={`flex-1 flex flex-col gap-6 w-full mx-auto z-10 max-[320px]:gap-3`}>

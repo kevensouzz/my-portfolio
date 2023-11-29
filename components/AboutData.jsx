@@ -34,7 +34,6 @@ const Data = [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
-          <SiPhp />,
         ],
       },
       {
@@ -43,7 +42,6 @@ const Data = [
           <SiGit />,
           <FaGithub />,
           <FaLinux />,
-          <FaDocker />,
         ],
       },
       {
@@ -59,7 +57,6 @@ const Data = [
         title: "Bancos de Dados",
         icons: [
           <SiMongodb />,
-          <TbBrandMysql />,
         ],
       }
     ],
