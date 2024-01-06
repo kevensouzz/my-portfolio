@@ -10,7 +10,7 @@ import {
   FaReact,
   FaGithub,
   FaLinux,
-
+  FaDocker
 } from "react-icons/fa";
 
 import {
@@ -19,8 +19,9 @@ import {
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
-  SiTailwindcss
 } from "react-icons/si";
+
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const Data = [
   {
@@ -40,6 +41,7 @@ const Data = [
           <SiGit />,
           <FaGithub />,
           <FaLinux />,
+          <FaDocker />,
         ],
       },
       {
@@ -47,7 +49,6 @@ const Data = [
         icons: [
           <FaReact />,
           <SiNextdotjs />,
-          <SiTailwindcss />,
           <SiNodedotjs />,
           <SiExpress />,
         ],
@@ -56,6 +57,7 @@ const Data = [
         title: "Bancos de Dados",
         icons: [
           <SiMongodb />,
+          <BiLogoPostgresql />,
         ],
       }
     ],
@@ -91,6 +93,10 @@ const Data = [
       {
         title: "ETEAAF - Curso Técnico Desenvolvimento de Sistemas",
         stage: "2021 - 2023",
+      },
+      {
+        title: "Estácio - Engenharia de Software",
+        stage: "2024 - 2028",
       }
     ]
   },
@@ -100,6 +106,14 @@ const Data = [
       {
         title: "ETEAAF - EXPOTEC",
         stage: "2023",
+      },
+      {
+        title: "ETEAAF - Web Care | Projeto Integrador",
+        stage: "2023",
+      },
+      {
+        title: "Desenvolvedor Web | Freelancer",
+        stage: "2023 - 2024",
       }
     ],
   }
@@ -144,7 +158,7 @@ export default function AboutData() {
               <span>{item.stage}</span>
               <span className={`flex gap-x-2`}>
                 {item.icons?.map((icon, iconIndex) => {
-                  return <span key={iconIndex} className={`text-white flex items-center justify-center text-base`}>{icon}</span>
+                  return <span key={iconIndex} title="descrição da parada" className={`text-white flex items-center justify-center text-base`}>{icon}</span>
                 })}
               </span>
             </div>

@@ -40,7 +40,7 @@ export default function ProjectsCarroussel() {
       {
         repos.map((item, itemIndex) => {
           return (
-            <div key={itemIndex} className={`h-5/6 w-full bg-black/50 backdrop-blur-sm rounded-2xl p-4 flex flex-col justify-between ${index !== itemIndex && "hidden"}`}>
+            <div key={itemIndex} className={`h-5/6 w-full bg-black/25 backdrop-blur-sm rounded-2xl p-4 flex flex-col justify-between ${index !== itemIndex && "hidden"}`}>
               <div>
                 <h3 className="font-semibold text-2xl">{item.name}</h3>
                 <p className="text-lg">{item.description}</p>
