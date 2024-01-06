@@ -158,7 +158,7 @@ export default function AboutData() {
               <span>{item.stage}</span>
               <span className={`flex gap-x-2`}>
                 {item.icons?.map((icon, iconIndex) => {
-                  return <span key={iconIndex} title="descrição da parada" className={`text-white flex items-center justify-center text-base`}>{icon}</span>
+                  return <span key={iconIndex} className={`text-white flex items-center justify-center text-base`}>{icon}</span>
                 })}
               </span>
             </div>
