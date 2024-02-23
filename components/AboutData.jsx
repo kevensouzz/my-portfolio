@@ -21,7 +21,9 @@ import {
   SiNodedotjs,
 } from "react-icons/si";
 
-import { BiLogoPostgresql } from "react-icons/bi";
+import { TbBrandMysql } from "react-icons/tb"
+
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 
 const Data = [
   {
@@ -33,6 +35,7 @@ const Data = [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
+          <BiLogoTypescript />,
         ],
       },
       {
@@ -58,6 +61,7 @@ const Data = [
         icons: [
           <SiMongodb />,
           <BiLogoPostgresql />,
+          <TbBrandMysql />,
         ],
       }
     ],
@@ -66,24 +70,32 @@ const Data = [
     title: 'certificados',
     info: [
       {
+        title: "Haravard (CC50) | Fundação Estudar ",
+        stage: "01/2024"
+      },
+      {
+        title: "Web Development Fundamentals | IBM",
+        stage: "01/2024"
+      },
+      {
         title: "Javascript (Basic) - HackerRank",
-        stage: "2023"
+        stage: "07/2023"
       },
       {
         title: "Trilha Especializar - Rocketseat",
-        stage: "2023"
+        stage: "02/2023"
       },
       {
         title: "Trilha Fundamentar - Rocketseat",
-        stage: "2023"
+        stage: "01/2023"
       },
       {
         title: "Trilha Conectar - Rocketseat",
-        stage: "2022"
+        stage: "10/2022"
       },
       {
         title: "Estrutura de Dados e Algoritmos - DIO",
-        stage: "2022",
+        stage: "07/2022",
       },
     ],
   },
@@ -105,11 +117,11 @@ const Data = [
     info: [
       {
         title: "ETEAAF - EXPOTEC",
-        stage: "2023",
+        stage: "07/2023 - 09/2023",
       },
       {
         title: "ETEAAF - Web Care | Projeto Integrador",
-        stage: "2023",
+        stage: "02/2023 - 12/2023",
       },
       {
         title: "Desenvolvedor Web | Freelancer",
@@ -155,7 +167,7 @@ export default function AboutData() {
               className={`flex-1 flex flex-row justify-center gap-x-1 items-center capitalize text-white/75 font-light text-sm max-[460px]:text-xs`}
             >
               <span>{item.title}</span>
-              <span>{item.stage}</span>
+              <span>{item.stage && `(${item.stage})`}</span>
               <span className={`flex gap-x-2`}>
                 {item.icons?.map((icon, iconIndex) => {
                   return <span key={iconIndex} className={`text-white flex items-center justify-center text-base`}>{icon}</span>
