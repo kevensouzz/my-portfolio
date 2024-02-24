@@ -70,11 +70,11 @@ const Data = [
     title: 'certificados',
     info: [
       {
-        title: "Haravard (CC50) | Fundação Estudar ",
+        title: "Haravard (CC50) - Fundação Estudar ",
         stage: "01/2024"
       },
       {
-        title: "Web Development Fundamentals | IBM",
+        title: "Web Development Fundamentals - IBM",
         stage: "01/2024"
       },
       {
@@ -116,7 +116,7 @@ const Data = [
     title: 'experiência',
     info: [
       {
-        title: "ETEAAF - EXPOTEC",
+        title: "ETEAAF - EXPOTEC | Feira de Ciências",
         stage: "07/2023 - 09/2023",
       },
       {
