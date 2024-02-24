@@ -171,10 +171,10 @@ export default function AboutData() {
               <span className={`flex gap-x-2`}>
                 {item.icons?.map((iconObj, iconIndex) => {
                   return <span key={iconIndex} className={`transition-all duration-300 ease-linear
-                  text-white flex items-center justify-center text-base sm:hover:text-accent sm:cursor-pointer z-50 relative group`}>
-                    <div className={`absolute pr-7 pb-2 right-0 hidden xl:group-hover:flex`}>
+                  text-white flex items-center justify-center text-base hover:text-accent sm:cursor-pointer z-50 relative group`}>
+                    <div className={`absolute pr-7 pb-2 right-0 hidden group-hover:flex`}>
                       <div className={`bg-accent relative flex text-white items-center p-1 rounded-[4px]`}>
-                        <div className={`text-xs leading-none font-semibold capitalize`}>{iconObj.name}</div>
+                        <div className={`text-xs leading-none font-semibold normal-case`}>{iconObj.name}</div>
                         <div className={`border-solid border-l-accent border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -bottom-[0.25px] -right-[6px]`}></div>
                       </div>
                     </div>
