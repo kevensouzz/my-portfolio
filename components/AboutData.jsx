@@ -32,36 +32,36 @@ const Data = [
       {
         title: 'Linguagens',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <BiLogoTypescript />,
+          { icon: <FaHtml5 />, name: "HTML" },
+          { icon: <FaCss3 />, name: "CSS" },
+          { icon: <FaJs />, name: "JavaScript" },
+          { icon: <BiLogoTypescript />, name: "TypeScript" }, ,
         ],
       },
       {
         title: "Ferramentas",
         icons: [
-          <SiGit />,
-          <FaGithub />,
-          <FaLinux />,
-          <FaDocker />,
+          { icon: <SiGit />, name: "Git" },
+          { icon: <FaGithub />, name: "GitHub" },
+          { icon: <FaLinux />, name: "Linux" },
+          { icon: <FaDocker />, name: "Docker" },
         ],
       },
       {
         title: 'Frameworks/Biblioitecas',
         icons: [
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiNodedotjs />,
-          <SiExpress />,
+          { icon: <FaReact />, name: "React.js" },
+          { icon: <SiNextdotjs />, name: "Next.js" },
+          { icon: <SiNodedotjs />, name: "Node.js" },
+          { icon: <SiExpress />, name: "Express.js" },
         ],
       },
       {
         title: "Bancos de Dados",
         icons: [
-          <SiMongodb />,
-          <BiLogoPostgresql />,
-          <TbBrandMysql />,
+          { icon: <SiMongodb />, name: "MongoDB" },
+          { icon: <BiLogoPostgresql />, name: "PostgreSQL" },
+          { icon: <TbBrandMysql />, name: "MySQL" },
         ],
       }
     ],
@@ -169,8 +169,17 @@ export default function AboutData() {
               <span>{item.title}</span>
               <span>{item.stage && `(${item.stage})`}</span>
               <span className={`flex gap-x-2`}>
-                {item.icons?.map((icon, iconIndex) => {
-                  return <span key={iconIndex} className={`text-white flex items-center justify-center text-base`}>{icon}</span>
+                {item.icons?.map((iconObj, iconIndex) => {
+                  return <span key={iconIndex} className={`transition-all duration-300 ease-linear
+                  text-white flex items-center justify-center text-base sm:hover:text-accent sm:cursor-pointer z-50 relative group`}>
+                    <div className={`absolute pr-7 pb-2 right-0 hidden xl:group-hover:flex`}>
+                      <div className={`bg-accent relative flex text-white items-center p-1 rounded-[4px]`}>
+                        <div className={`text-xs leading-none font-semibold capitalize`}>{iconObj.name}</div>
+                        <div className={`border-solid border-l-accent border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -bottom-[0.25px] -right-[6px]`}></div>
+                      </div>
+                    </div>
+                    {iconObj.icon}
+                  </span>
                 })}
               </span>
             </div>
