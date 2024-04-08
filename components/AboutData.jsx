@@ -10,7 +10,9 @@ import {
   FaReact,
   FaGithub,
   FaLinux,
-  FaDocker
+  FaDocker,
+  FaJava,
+  FaAngular
 } from "react-icons/fa";
 
 import {
@@ -19,6 +21,7 @@ import {
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
+  SiSpring,
 } from "react-icons/si";
 
 import { TbBrandMysql } from "react-icons/tb"
@@ -36,6 +39,7 @@ const Data = [
           { icon: <FaCss3 />, name: "CSS" },
           { icon: <FaJs />, name: "JavaScript" },
           { icon: <BiLogoTypescript />, name: "TypeScript" }, ,
+          { icon: <FaJava />, name: "Java" }, ,
         ],
       },
       {
@@ -50,10 +54,12 @@ const Data = [
       {
         title: 'Frameworks/Biblioitecas',
         icons: [
+          { icon: <FaAngular />, name: "Angular.js" },
           { icon: <FaReact />, name: "React.js" },
           { icon: <SiNextdotjs />, name: "Next.js" },
           { icon: <SiNodedotjs />, name: "Node.js" },
           { icon: <SiExpress />, name: "Express.js" },
+          { icon: <SiSpring />, name: "Spring" },
         ],
       },
       {

@@ -1,5 +1,4 @@
 {
-  "name": "my-portfolio",
   "private": true,
   "scripts": {
     "dev": "next dev",

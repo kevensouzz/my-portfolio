@@ -13,9 +13,7 @@ export default function HomeText() {
         <Typewriter
           options={{
             strings: [
-              "Desenvolvedor Fullstack",
-              "Desenvolvedor React",
-              "Desenvolvedor Node",
+              "Desenvolvedor Fullstack"
             ],
             autoStart: true,
             loop: true,
